@@ -11,6 +11,27 @@ body {
     font-family: "General Sans", sans-serif;
 }
 
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #dfdff0;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar {
+    width: 4px;
+    background-color: #dfdff0;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, rgb(206, 215, 233)),
+            color-stop(0.72, rgb(207, 217, 231)),
+            color-stop(0.86, rgb(211, 218, 238)));
+}
+
 @layer base {
     @font-face {
         font-family: "circular-web";
